@@ -1,79 +1,81 @@
-# simple-django-api
+# Simple Django API
 
-This Django REST Framework project makes part of my portfolio. It provides a simple API for managing service endpoints.
+[![python](https://img.shields.io/badge/python-v3.10+-blue.svg?logo=python)](https://github.com/topics/python) 
+[![calculator](https://img.shields.io/badge/django-API-orange.svg)](https://github.com/topics/calculator)
 
-## Getting Started
+This repository contains a simple Django REST Framework project that provides an API for managing service endpoints. The
+project was developed as part of my portfolio. It is a simple project, but it is a good example of how to build a REST
+API using Django.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing
-purposes.
+## How To Run
 
-### Prerequisites
+To run this project, you will need to have Python 3.10 or later installed. If you don't have it, you can download it from
+the [official website](https://www.python.org/downloads/). You will also need to have `pip` installed. If you don't have
+it, you can follow the instructions on the [official website](https://pip.pypa.io/en/stable/installation/). With Python
+and `pip` installed, you can follow the steps below to run the project:
 
-You need to have Python and Django installed on your machine. You can download Python
-from [here](https://www.python.org/downloads/) and you can install Django using pip:
-
-```bash
-pip install django
-```
-
-You also need to install Django REST Framework:
+1. Clone the repository:
 
 ```bash
-pip install djangorestframework
+git clone
 ```
 
-### Installing
-
-Clone the repository:
+2. Navigate to the project's directory:
 
 ```bash
-git clone https://github.com/santannaflaercio/simple-django-api.git
+cd simple-django-api
 ```
 
-Navigate to the project directory:
+3. Create a virtual environment:
 
 ```bash
-cd simple_django_api
+python -m venv .venv
 ```
 
-Install the required packages:
+4. Activate the virtual environment:
+
+```bash
+source .venv/bin/activate
+```
+
+5. Install the project's dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the migrations:
+6. Run the migrations:
 
 ```bash
 python manage.py migrate
 ```
 
-Finally, start the development server:
+7. Run the development server:
 
 ```bash
 python manage.py runserver
 ```
 
-The API will be available at `http://127.0.0.1:8000/`.
+8. Access the API at `http://localhost:8000/api/`.
+9. Access the admin interface at `http://localhost:8000/admin/`.
 
-## Running the tests
+## API Endpoints
 
-To run the tests, use the following command:
+The API provides the following endpoints:
 
-```bash
-python manage.py test
-```
+- `GET /api/`: returns a list of all services.
+- `POST /api/`: creates a new service.
 
-## Built With
+## How to Contribute
 
-* [Python](https://www.python.org/) - The programming language used
-* [Django](https://www.djangoproject.com/) - The web framework used
-* [Django REST Framework](https://www.django-rest-framework.org/) - The toolkit used to build the API
+Contributions are always welcome! Here's how you can get involved:
 
-## Authors
+- Report any bugs or issues you encounter.
+- Suggest new features or enhancements to improve the project.
+- Submit pull requests with code improvements or fixes.
 
-* **santannaflaercio** - *Initial work* - [santannaflaercio](https://github.com/santannaflaercio)
+We appreciate your contributions and feedback to make this project better!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is released without a license. You are free to use it for any purpose.
